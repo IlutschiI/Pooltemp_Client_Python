@@ -15,4 +15,4 @@ class TempController:
     def readTemperatures(self):
         sensors = W1ThermSensor.get_available_sensors()
         for sensor in sensors:
-            print(f"Sensor {sensor.id} found: {sensor.get_temperature()}")
+            print("Sensor "+sensor.id+" found: "+sensor.get_temperature())
